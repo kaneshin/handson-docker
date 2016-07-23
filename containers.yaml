@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: [your-metadata-name]
+spec:
+  containers:
+    - name: [your-container-name]
+      image: us.gcr.io/[your-project-id]/[your-tag-name]
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 8080
+          hostPort: 80
